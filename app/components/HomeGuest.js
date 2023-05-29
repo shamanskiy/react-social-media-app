@@ -108,7 +108,6 @@ function HomeGuest() {
           draft.email.isUnique &&
           !draft.password.hasErrors
         ) {
-          alert("submiting reginster request")
           draft.submitCount++
         }
         return
