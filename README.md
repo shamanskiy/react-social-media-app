@@ -4,6 +4,8 @@ This is a social-media-type app written in React following the awesome ["React f
 
 The app is currently hosted with a free-tier [Netlify](https://netlify.com) account at https://react-social-media-app-shamanskiy.netlify.app.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c1af5f23-dc27-4dd0-8352-6ccad8b1a097/deploy-status)](https://app.netlify.com/sites/react-social-media-app-shamanskiy/deploys)
+
 ## Useful links
 
 - [App hosting](https://app.netlify.com/sites/react-social-media-app-shamanskiy/overview)
