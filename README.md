@@ -58,3 +58,9 @@ npm run previewDist
 ```
 
 and visit [localhost:4000](localhost:4000).
+
+## TODO
+
+- handle "profile-not-found" situation: render NotFound component
+- login form validation: if username/password field is empty, don't send login request and use `is-invalid` style for `input` fields to add red border
+- colors for pop-up messages: use additional Bootstrap stylings - `alert-primary` (blue), `alert-secondary` (gray), `alert-danger` (red), `alert-warning` (yellow), `alert-info` (light blue/teal), `alert-light`, `alert-dark`
