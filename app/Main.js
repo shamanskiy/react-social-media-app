@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { CSSTransition } from "react-transition-group"
 import Axios from "axios"
 import { REMOTE_BACKEND_URL } from "./Config"
-Axios.defaults.baseURL = process.env.BACKENDURL || REMOTE_BACKEND_URL
+Axios.defaults.baseURL = REMOTE_BACKEND_URL
 
 import StateContext from "./StateContext"
 import DispatchContext from "./DispatchContext"

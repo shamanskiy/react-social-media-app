@@ -8,7 +8,7 @@ import io from "socket.io-client"
 import { REMOTE_BACKEND_URL } from "../Config"
 
 function Chat() {
-  const chatServerUrl = process.env.BACKENDURL || REMOTE_BACKEND_URL
+  const chatServerUrl = REMOTE_BACKEND_URL
   const socket = useRef(null)
   const appState = useContext(StateContext)
   const appDispatch = useContext(DispatchContext)
