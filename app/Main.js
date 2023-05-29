@@ -4,8 +4,7 @@ import { useImmerReducer } from "use-immer"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { CSSTransition } from "react-transition-group"
 import Axios from "axios"
-import { REMOTE_BACKEND_URL } from "./Config"
-Axios.defaults.baseURL = REMOTE_BACKEND_URL
+Axios.defaults.baseURL = process.env.BACKENDURL || "https://react-social-media-app-backend.onrender.com"
 
 import StateContext from "./StateContext"
 import DispatchContext from "./DispatchContext"

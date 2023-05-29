@@ -5,10 +5,8 @@ import { useImmer } from "use-immer"
 import StateContext from "../StateContext"
 import DispatchContext from "../DispatchContext"
 import io from "socket.io-client"
-import { REMOTE_BACKEND_URL } from "../Config"
 
 function Chat() {
-  const chatServerUrl = REMOTE_BACKEND_URL
   const socket = useRef(null)
   const appState = useContext(StateContext)
   const appDispatch = useContext(DispatchContext)
@@ -28,7 +26,7 @@ function Chat() {
   }, [appState.isChatOpen])
 
   useEffect(() => {
-    socket.current = io(chatServerUrl)
+    socket.current = io(process.env.BACKENDURL || "https://react-social-media-app-backend.onrender.com")
     socket.current.on("chatFromServer", message => {
       setState(draft => {
         draft.chatMessages.push(message)
